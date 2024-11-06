@@ -30,6 +30,16 @@
             margin-right: 10px; 
         }
 
+        .table-active {
+            background-color: #adadad !important;  
+        }
+        .table-bordered tr {
+            border-bottom: 1px solid #b3b0b0;
+        }
+        .table-bordered td, .table-bordered th {
+            border: none; 
+        }
+
     </style>
 </head>
 <body>
@@ -44,8 +54,9 @@
 
     <!-- Contenido -->
     <div class="container mt-4">
-        <div class="col-6" >
-                <table class= "table table-striped">
+    <div class="row">
+        <div class="col-8" >
+                <table class= "table table-striped table-bordered table-hover">
                     <thead>
                         <tr>
                         <th scope="col" >#</th>
@@ -54,10 +65,12 @@
                         <th scope="col">Seasons</th>
                         </tr>
                     </thead>
-                    <tbody id = "series-table"> </tbody>
+                    <tbody id = "series-table" class="table-active"></tbody>
                 </table>
                 <div id = "promedio"> </div>
         </div>
+        <div class="col-4" id="card"></div>
+    </div>
     </div>
 </body>
 </html>
